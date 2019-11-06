@@ -18,16 +18,12 @@ const is = (cb) => !!cb;
 const and = (cb) => cb;
 
 const moderator = (user) => {
-    if (user && user.isModerator) {
-        return user;
-    }
+    if (user && user.isModerator) return user;
     return;
 };
 
 const active = (user) => {
-    if (user && user.isActive) {
-        return user;
-    }
+    if (user && user.isActive) return user;
     return;
 };
 
